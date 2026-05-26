@@ -390,6 +390,29 @@ section:not(.hero) {
   background: var(--paper-warm);
 }
 
+.video-section {
+  background: var(--white);
+  padding-top: 82px !important;
+}
+
+.video-frame {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.video-frame video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  max-height: 72vh;
+  object-fit: cover;
+}
+
 .split,
 .two-column {
   display: grid;
