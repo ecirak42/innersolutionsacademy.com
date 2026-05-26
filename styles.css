@@ -605,7 +605,7 @@ section:not(.hero) {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   gap: 28px;
   align-items: center;
 }
