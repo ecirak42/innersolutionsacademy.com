@@ -22,9 +22,11 @@ Then open `http://localhost:8080`.
 
 ## Deploy
 
-Recommended: connect this GitHub repo to Cloudflare Pages, Netlify, or Vercel
-and deploy the root directory as a static site. GitHub Pages can also work; the
-`CNAME` and `.nojekyll` files are already included for that path.
+This repo is published with GitHub Pages from the `main` branch at the root
+directory.
+
+- Repository: `https://github.com/ecirak42/innersolutionsacademy.com`
+- Custom domain: `innersolutionsacademy.com`
 
 When the preview deployment is verified, update DNS away from the current
 GoHighLevel values:
@@ -32,8 +34,23 @@ GoHighLevel values:
 - Root `A` currently points to `162.159.140.166`.
 - `www` currently points to `sites.ludicrous.cloud`.
 
-Replace those records with the DNS records provided by the new host. Do this
-only after the new deployment is live and tested.
+Replace those records with GitHub Pages records:
+
+- `@` `A` `185.199.108.153`
+- `@` `A` `185.199.109.153`
+- `@` `A` `185.199.110.153`
+- `@` `A` `185.199.111.153`
+- `www` `CNAME` `ecirak42.github.io`
+
+Optional IPv6 records:
+
+- `@` `AAAA` `2606:50c0:8000::153`
+- `@` `AAAA` `2606:50c0:8001::153`
+- `@` `AAAA` `2606:50c0:8002::153`
+- `@` `AAAA` `2606:50c0:8003::153`
+
+After DNS propagates, return to GitHub Pages settings and enable HTTPS if it is
+not enabled automatically.
 
 ## Booking Flow
 
